@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://jhChen4future.github.io/file/photo.pdf" class="floatpic">
+<img src="https://jhChen4future.github.io/file/photo.png" class="floatpic">
 
 Hi! Here is **Jinghao Chen (陈景灏)**.<br>
 
