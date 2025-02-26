@@ -16,14 +16,13 @@ title: Publications
 ## Conference Paper
 
 
-<br>
-
 ---
 
 
 
 ## Ongoing Project
+·Identity Bias in Human-AI Interaction（my favourite now, focus on human and GPT behaviors influnced by identity)
+·Data-Driven Investment Strategies in Chinese Film Ticketing Platforms(My first applied paper project, and enhacing my Python skills for crawler)
+---
 
-
-  <br>
 # Finished Project
