@@ -1,3 +1,5 @@
+This personal webpage is based on GuangLun template. The detailed content of the template's README is as follows:
+
 # GuangLun2000.github.io
 
 GuangLun (光轮) means Nimbus in Chinese ✨
