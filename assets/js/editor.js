@@ -6,10 +6,7 @@
   const preview = document.querySelector('#page-preview');
   const previewTabs = document.querySelectorAll('.preview-tab');
   const form = document.querySelector('#change-form');
-  const scope = document.querySelector('#change-scope');
   const request = document.querySelector('#change-request');
-  const tone = document.querySelector('#change-tone');
-  const scopeHint = document.querySelector('#scope-hint');
   const requestCount = document.querySelector('#request-count');
   const status = document.querySelector('#form-status');
   const draftPanel = document.querySelector('#draft-panel');
@@ -18,44 +15,11 @@
   const copyStatus = document.querySelector('#copy-status');
   const resetButton = document.querySelector('#reset-draft');
 
-  const scopeDetails = {
-    profile: {
-      file: '_data/profile.yml',
-      hint: 'Best for changes to your name, affiliation, interests, links, or introduction.',
-      label: 'profile and bio'
-    },
-    research: {
-      file: '_data/research.yml',
-      hint: 'Best for adding, removing, or reframing a research project and its status.',
-      label: 'a research project'
-    },
-    news: {
-      file: '_data/news.yml',
-      hint: 'Best for a new update, milestone, event, or timeline entry.',
-      label: 'news or timeline'
-    },
-    writing: {
-      file: 'writing.html or _posts/',
-      hint: 'Best for publishing a field note or changing the writing page.',
-      label: 'writing and notes'
-    },
-    visual: {
-      file: 'assets/css/site.css and/or index.html',
-      hint: 'Best for changes to colors, spacing, typography, layout, or motion.',
-      label: 'visual style or layout'
-    }
-  };
-
   const pageDetails = {
     '/': 'Homepage',
     '/publications/': 'Research page',
     '/writing/': 'Writing page'
   };
-
-  function updateScopeHint() {
-    const detail = scopeDetails[scope.value];
-    scopeHint.textContent = detail.hint;
-  }
 
   function contextSummary() {
     const projects = research.map((item) => item.title).join('; ');
@@ -74,25 +38,21 @@
   }
 
   function buildDraft() {
-    const detail = scopeDetails[scope.value];
     const requestedChange = request.value.trim();
-    const selectedTone = tone.value;
     const currentContext = contextSummary();
 
     return `请在 jhChen4future/jhChen4future.github.io 仓库中完成一次小范围、可维护的主页更新。
 
 目标页面：${pageFromPreview()}
-修改类型：${detail.label}
-建议优先检查的文件：${detail.file}
-用户希望的表达感觉：${selectedTone}
 
-用户的自然语言需求：
+用户的自然语言修改需求：
 “${requestedChange}”
 
 当前站点上下文：
 ${currentContext}
 
 实现约束：
+- 先理解整段需求，再自行判断涉及的页面、组件或数据文件，不要要求我提前分类。
 - 保持现有的 Jekyll 结构、响应式布局和明暗主题。
 - 个人资料、研究项目和动态优先更新 _data/ 下的 YAML 数据文件，不要把一次性内容硬编码到多个页面。
 - 不要删除原始研究材料或 legacy-theme/ 中的存档，除非我明确要求。
@@ -119,11 +79,9 @@ ${currentContext}
     });
   });
 
-  scope.addEventListener('change', updateScopeHint);
-
   request.addEventListener('input', () => {
-    if (request.value.length > 600) {
-      request.value = request.value.slice(0, 600);
+    if (request.value.length > 1200) {
+      request.value = request.value.slice(0, 1200);
     }
     requestCount.textContent = request.value.length;
   });
@@ -162,6 +120,4 @@ ${currentContext}
     status.textContent = '';
     request.focus();
   });
-
-  updateScopeHint();
 })();
