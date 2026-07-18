@@ -36,3 +36,4 @@
     if (localStorage.getItem('theme') === 'dark') document.documentElement.dataset.theme = 'dark';
   } catch (error) {}
 </script>
+{% if page.editor %}<meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="{{ '/assets/css/editor.css' | relative_url }}">{% endif %}
