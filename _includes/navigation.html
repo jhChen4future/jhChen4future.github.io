@@ -1,17 +1,23 @@
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="{{ site.url }}">{{ site.title }}</a>
-	</div><!-- /.site-name -->
-  {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
-	<div class="top-navigation">
-		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		    <ul>
-		        {% for link in site.links %}
-            <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url %}class="top-navigation-current"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
+<header class="site-header" data-site-header>
+  <div class="shell header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} - home">
+      <span class="wordmark-mark" aria-hidden="true">JC</span>
+      <span class="wordmark-name">Jinghao Chen</span>
+    </a>
 
-<!-- Lastly modified by Hanlin CAI in 2023/05/01 -->
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span>Menu</span><span class="nav-toggle-mark" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}" {% if page.nav == item.key %}aria-current="page"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+      <a class="nav-contact" href="mailto:{{ site.data.profile.email }}">Let's talk <span aria-hidden="true">&nearr;</span></a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span class="theme-toggle-sun" aria-hidden="true">&#9728;</span>
+        <span class="theme-toggle-moon" aria-hidden="true">&#9680;</span>
+      </button>
+    </nav>
+  </div>
+</header>

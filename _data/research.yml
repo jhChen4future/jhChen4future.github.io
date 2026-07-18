@@ -1,0 +1,24 @@
+- number: "01"
+  title: Identity Bias in Human-AI Interaction
+  status: Ongoing project
+  featured: true
+  summary: >-
+    How do identity cues change the way people evaluate, trust, and collaborate with
+    AI systems? This project studies behavioral differences across interactions with
+    humans and large language models.
+  themes:
+    - Human-AI interaction
+    - Identity
+    - Experimental design
+
+- number: "02"
+  title: Data-Driven Investment Strategies in Chinese Film Ticketing Platforms
+  status: Ongoing project
+  featured: true
+  summary: >-
+    An applied research project using web data and computational methods to understand
+    demand signals and investment decisions in China's film ticketing market.
+  themes:
+    - Applied economics
+    - Web data
+    - Python

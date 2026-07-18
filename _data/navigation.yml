@@ -1,0 +1,9 @@
+- label: About
+  url: /
+  key: home
+- label: Research
+  url: /publications/
+  key: research
+- label: Writing
+  url: /writing/
+  key: writing

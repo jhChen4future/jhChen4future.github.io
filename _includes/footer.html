@@ -1,12 +1,14 @@
-<h6>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.
-  Published with <a href="https://pages.github.com/" rel="nofollow">GitHub Pages</a>,
-  powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>,
-  based on the <a href="https://mademistakes.com/" rel="nofollow">Minimal Mistakes</a> theme.
-  Source code for this website can be found <a href="https://github.com/GuangLun2000/GuangLun2000.github.io" rel="nofollow">here</a>.
-
-  <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=tGZ_4852x6Mm-PPomoo98e4y_CI8D9TmioGTO03Daik"></script> -->
-  
-</h6>
-
-
-<!-- Lastly modified by Hanlin CAI in 2023/03/16 -->
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <a class="footer-name" href="{{ '/' | relative_url }}">Jinghao Chen</a>
+      <p>Questions about people, decisions, and intelligent systems.</p>
+    </div>
+    <div class="footer-links" aria-label="Social links">
+      <a href="mailto:{{ site.data.profile.email }}">Email <span aria-hidden="true">&nearr;</span></a>
+      <a href="{{ site.data.profile.github }}" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&nearr;</span></a>
+      <a href="{{ site.data.profile.linkedin }}" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">&nearr;</span></a>
+    </div>
+    <p class="footer-meta">&copy; <span data-current-year>{{ site.time | date: '%Y' }}</span> Jinghao Chen &middot; Built with curiosity and Jekyll.</p>
+  </div>
+</footer>

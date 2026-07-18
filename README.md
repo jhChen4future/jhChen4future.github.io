@@ -1,25 +1,51 @@
-This personal webpage is based on GuangLun template. The detailed content of the template's README is as follows:
+# Jinghao Chen - Academic Homepage
 
-# GuangLun2000.github.io
+A custom, data-driven academic homepage built with Jekyll and hosted on GitHub Pages. The design borrows the clarity of academicpages while keeping the visual system lighter, warmer, and more personal.
 
-GuangLun (光轮) means Nimbus in Chinese ✨
+## The quick-edit map
 
-Here is **Hanlin Cai (Lance, 蔡汉霖)**. This is the repository for my personal website.
+Most updates only require editing a small YAML file:
 
-## Update and News
+| What to update | File |
+| --- | --- |
+| Bio, links, affiliation, interests | `_data/profile.yml` |
+| Research projects | `_data/research.yml` |
+| News | `_data/news.yml` |
+| Navigation | `_data/navigation.yml` |
+| Homepage structure | `index.html` |
+| Research page | `publications.html` |
+| Writing page | `writing.html` |
+| Colors and layout | `assets/css/site.css` |
 
-- **Sep 2024:** This Github Page has reached **500+ Stars**🌟 Thank you so much!
-- **May 2023:** [Jekyll website building videos](https://www.bilibili.com/video/BV1ja4y1G7tX/) have been uploaded to Bilibili (小白建站视频)
-- **April 2023:** [Website building tutorials](https://caihanlin.com/blogs/web/) have been post on my blog (建站完全指南)
-- **Dec. 2022:** My personal website have been implemented in [caihanlin.com](https://caihanlin.com)
-- **Oct. 2022:** This Github Page have been built based on [Jason Ansel's site](https://github.com/jansel/jansel.github.io).
+See [`docs/content-guide.md`](docs/content-guide.md) for examples and a safe update checklist.
 
-## Star History
+## Add a field note
 
-**If you like it, please STAR it! 🥰**
+Create a file in `_posts` named `YYYY-MM-DD-short-title.md`:
 
-[![Star History Chart](https://api.star-history.com/svg?repos=GuangLun2000/GuangLun2000.github.io&type=Date)](https://star-history.com/#GuangLun2000/GuangLun2000.github.io&Date)
+```yaml
+---
+layout: post
+title: "Your title"
+description: "One sentence shown on the writing page."
+---
 
-## Statement
+Write the note in Markdown here.
+```
 
-© 2024 Hanlin Cai. Published with [GitHub Pages](https://pages.github.com/), powered by [Jekyll](https://jekyllrb.com/), based on the [Minimal Mistakes](https://mademistakes.com/) theme and [Jason Ansel's site](https://github.com/jansel/jansel.github.io). Source code for this website can be found [here](https://github.com/GuangLun2000/GuangLun2000.github.io).
+The note will automatically appear on `/writing/` after GitHub Pages rebuilds the site.
+
+## Local preview
+
+With Ruby and Bundler installed:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open `http://localhost:4000`.
+
+## Publishing
+
+The production site is served from the repository's GitHub Pages configuration. Merge reviewed changes into the configured publishing branch and GitHub Pages will rebuild the site.
