@@ -52,6 +52,6 @@ The production site is served from the repository's GitHub Pages configuration. 
 
 ## Open the page editor
 
-Open `/editor/` on the published site to browse the homepage, Research, and Writing pages in one place. Describe a change in natural language and use the generated brief as the next message to Codex.
+Open `/editor/` directly on the published site to browse the homepage, Research, and Writing pages in one place. It is a separate, unlisted route: the personal homepage does not embed it or link to it. Describe a change in natural language and use the generated brief as the next message to Codex.
 
-The editor is intentionally client-only: it does not modify the repository or send requests to an AI service. It packages the current site context and the requested change into a reviewable handoff.
+The editor is intentionally client-only and marked `noindex`: it does not modify the repository or send requests to an AI service. It packages the current site context and the requested change into a reviewable handoff.
