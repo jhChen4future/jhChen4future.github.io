@@ -1,0 +1,48 @@
+---
+layout: default
+permalink: /publications/
+nav: research
+title: Research
+description: Current research questions and ongoing projects by Jinghao Chen.
+---
+<header class="page-hero shell reveal">
+  <p class="eyebrow">Research</p>
+  <h1>Understanding decisions in a changing social and technological world.</h1>
+  <p>{{ site.data.profile.research_statement }}</p>
+</header>
+
+<section class="section research-index">
+  <div class="shell">
+    <div class="section-top reveal">
+      <div class="section-label"><span>01</span> Projects</div>
+      <p class="section-note">Work in progress &middot; Last reviewed July 2026</p>
+    </div>
+    <div class="research-detail-list">
+      {% for project in site.data.research %}
+      <article class="research-detail reveal">
+        <div class="research-detail-head">
+          <span class="research-number">{{ project.number }}</span>
+          <span class="status-pill">{{ project.status }}</span>
+        </div>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.summary }}</p>
+        <div class="project-tags">
+          {% for theme in project.themes %}<span>{{ theme }}</span>{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section publication-note">
+  <div class="shell split-grid">
+    <div class="section-label reveal"><span>02</span> Publications</div>
+    <div class="empty-state reveal">
+      <span class="empty-mark" aria-hidden="true">&nearr;</span>
+      <h2>Ideas are still taking shape.</h2>
+      <p>Formal publications and working papers will appear here as the projects mature. In the meantime, I am happy to discuss the questions, methods, and early findings behind this work.</p>
+      <a class="button button-primary" href="mailto:{{ site.data.profile.email }}">Ask about my work</a>
+    </div>
+  </div>
+</section>
