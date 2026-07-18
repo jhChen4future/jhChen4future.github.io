@@ -51,31 +51,9 @@ editor: true
 
       <form id="change-form">
         <label class="editor-field">
-          <span>What should change?</span>
-          <select id="change-scope">
-            <option value="profile">My profile and bio</option>
-            <option value="research">A research project</option>
-            <option value="news">News or timeline</option>
-            <option value="writing">Writing and notes</option>
-            <option value="visual">The visual style or layout</option>
-          </select>
-          <small id="scope-hint">Best for changes to your name, affiliation, interests, links, or introduction.</small>
-        </label>
-
-        <label class="editor-field">
-          <span>Describe it naturally</span>
-          <textarea id="change-request" rows="7" required placeholder="Example: Make the introduction more concise and mention that I am looking for collaborators working on human–AI interaction. Keep the tone warm and academic."></textarea>
-          <small class="field-footer"><span id="request-count">0</span>/600 characters</small>
-        </label>
-
-        <label class="editor-field">
-          <span>What should the result feel like?</span>
-          <select id="change-tone">
-            <option value="clear and warm">Clear and warm</option>
-            <option value="more concise">More concise</option>
-            <option value="more playful">More playful</option>
-            <option value="more formal">More formal</option>
-          </select>
+          <span>Describe the change</span>
+          <textarea id="change-request" rows="10" maxlength="1200" required placeholder="Write the whole idea here. You can combine content, layout, tone, and small fixes in one request."></textarea>
+          <small class="field-footer"><span id="request-count">0</span>/1200 characters</small>
         </label>
 
         <div class="editor-context">
