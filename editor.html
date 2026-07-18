@@ -1,0 +1,111 @@
+---
+layout: default
+permalink: /editor/
+title: Page editor
+description: Browse the academic homepage and turn natural-language ideas into a focused Codex change brief.
+editor: true
+---
+<section class="editor-page shell">
+  <header class="editor-hero reveal">
+    <div>
+      <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Codex companion</p>
+      <h1>Shape the next version of your page.</h1>
+      <p class="editor-lede">Browse the public page on the left. Describe a change on the right. This little workspace turns your thought into a focused brief you can hand back to Codex.</p>
+    </div>
+    <a class="text-link editor-open-link" href="{{ '/' | relative_url }}" target="_blank" rel="noreferrer">Open public page <span aria-hidden="true">&nearr;</span></a>
+  </header>
+
+  <div class="editor-steps" aria-label="Editor steps">
+    <span><b>01</b> Browse</span>
+    <span><b>02</b> Describe</span>
+    <span><b>03</b> Copy the brief</span>
+  </div>
+
+  <div class="editor-workbench">
+    <section class="editor-panel preview-panel" aria-labelledby="preview-title">
+      <div class="editor-panel-head">
+        <div>
+          <p class="card-kicker">Live preview</p>
+          <h2 id="preview-title">See the page in context.</h2>
+        </div>
+        <span class="editor-status"><span class="status-dot" aria-hidden="true"></span>same site</span>
+      </div>
+      <div class="preview-tabs" role="tablist" aria-label="Choose a page to preview">
+        <button class="preview-tab is-active" type="button" role="tab" aria-selected="true" data-preview="/" data-label="Homepage">Homepage</button>
+        <button class="preview-tab" type="button" role="tab" aria-selected="false" data-preview="/publications/" data-label="Research">Research</button>
+        <button class="preview-tab" type="button" role="tab" aria-selected="false" data-preview="/writing/" data-label="Writing">Writing</button>
+      </div>
+      <div class="preview-frame-wrap">
+        <iframe id="page-preview" src="{{ '/' | relative_url }}" title="Preview of the academic homepage"></iframe>
+      </div>
+    </section>
+
+    <section class="editor-panel brief-panel" aria-labelledby="brief-title">
+      <div class="editor-panel-head">
+        <div>
+          <p class="card-kicker">Change brief</p>
+          <h2 id="brief-title">Tell Codex what you are imagining.</h2>
+        </div>
+        <span class="brief-mark" aria-hidden="true">✦</span>
+      </div>
+
+      <form id="change-form">
+        <label class="editor-field">
+          <span>What should change?</span>
+          <select id="change-scope">
+            <option value="profile">My profile and bio</option>
+            <option value="research">A research project</option>
+            <option value="news">News or timeline</option>
+            <option value="writing">Writing and notes</option>
+            <option value="visual">The visual style or layout</option>
+          </select>
+          <small id="scope-hint">Best for changes to your name, affiliation, interests, links, or introduction.</small>
+        </label>
+
+        <label class="editor-field">
+          <span>Describe it naturally</span>
+          <textarea id="change-request" rows="7" required placeholder="Example: Make the introduction more concise and mention that I am looking for collaborators working on human–AI interaction. Keep the tone warm and academic."></textarea>
+          <small class="field-footer"><span id="request-count">0</span>/600 characters</small>
+        </label>
+
+        <label class="editor-field">
+          <span>What should the result feel like?</span>
+          <select id="change-tone">
+            <option value="clear and warm">Clear and warm</option>
+            <option value="more concise">More concise</option>
+            <option value="more playful">More playful</option>
+            <option value="more formal">More formal</option>
+          </select>
+        </label>
+
+        <div class="editor-context">
+          <span class="context-icon" aria-hidden="true">◎</span>
+          <p><strong>Current context loaded</strong><br>{{ site.data.profile.affiliation }} · {{ site.data.research.size }} research projects in the data layer.</p>
+        </div>
+
+        <button class="button button-primary editor-submit" type="submit">Generate Codex draft <span aria-hidden="true">&rarr;</span></button>
+        <p class="editor-form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="draft-panel" id="draft-panel" hidden aria-labelledby="draft-title">
+        <div class="draft-head">
+          <div>
+            <p class="card-kicker">Ready to hand off</p>
+            <h2 id="draft-title">Your modification brief.</h2>
+          </div>
+          <button class="icon-button" id="reset-draft" type="button" aria-label="Start a new brief" title="Start a new brief">↺</button>
+        </div>
+        <textarea id="codex-draft" readonly aria-label="Generated Codex modification brief"></textarea>
+        <div class="draft-actions">
+          <button class="button button-primary" id="copy-draft" type="button">Copy draft <span aria-hidden="true">&nearr;</span></button>
+          <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+        </div>
+        <p class="draft-note">Paste this into a new Codex message or your next turn. It describes the intent, context, likely files, and acceptance criteria without changing anything automatically.</p>
+      </section>
+    </section>
+  </div>
+</section>
+
+<script id="site-context" type="application/json">{{ site.data.profile | jsonify }}</script>
+<script id="research-context" type="application/json">{{ site.data.research | jsonify }}</script>
+<script src="{{ '/assets/js/editor.js' | relative_url }}" defer></script>
