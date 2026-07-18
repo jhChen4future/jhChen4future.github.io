@@ -1,27 +1,30 @@
 name: Jinghao Chen
 short_name: JC
-role: Undergraduate researcher
-affiliation: School of Management, Zhejiang University
-location: Hangzhou, China
+role: Incoming M.S. AEM student
+affiliation: Cornell University
+location: Ithaca, NY
 email: maximumc0729@gmail.com
 github: https://github.com/jhChen4future
 linkedin: https://www.linkedin.com/in/jinghao-chen-149307349
 portrait: /assets/images/jinghao-chen.webp
 
 intro: >-
-  I am an undergraduate student in the School of Management at Zhejiang University,
-  majoring in Accounting (Intelligent Financial Management). My research sits at the
-  intersection of behavioral and experimental economics, social preferences, and
-  human-AI interaction.
+  I recently graduated from the School of Management at Zhejiang University, where I
+  studied Accounting (Intelligent Financial Management Class). I am an incoming M.S.
+  student in Applied Economics and Management at Cornell University. My research
+  interests are in behavioral and experimental economics, prosocial behavior, and the
+  potential of large language models in social science.
 
 research_statement: >-
-  I am interested in the small, often invisible forces that shape a decision: identity,
-  social context, incentives, and the presence of intelligent systems. I use behavioral
-  experiments and data-driven methods to make those forces visible.
+  I study how people decide and cooperate in social settings, with a focus on social
+  preferences, prosocial behavior, and the institutions and technologies that shape
+  them. I am also interested in how large language models can expand the questions
+  and methods of social science research.
 
 interests:
   - Behavioral economics
   - Experimental economics
-  - Social preferences
+  - Prosocial behavior
+  - Cooperation and social preferences
   - Human-AI interaction
-  - Data-driven decision making
+  - Large language models in social science

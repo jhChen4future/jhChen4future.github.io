@@ -4,6 +4,9 @@
 - label: Research
   url: /publications/
   key: research
-- label: Writing
+- label: Post
   url: /writing/
   key: writing
+- label: Public Goods
+  url: /public-goods/
+  key: public-goods
