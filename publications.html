@@ -15,20 +15,27 @@ description: Current and completed research projects by Jinghao Chen.
   <div class="shell">
     <div class="section-top reveal">
       <div class="section-label"><span>01</span> Projects</div>
-      <p class="section-note">Work in progress &middot; Last reviewed July 2026</p>
+      <p class="section-note">Ongoing work first &middot; Last reviewed July 2026</p>
     </div>
     <div class="research-detail-list">
       {% for project in site.data.research %}
       <article class="research-detail reveal">
         <div class="research-detail-head">
           <span class="research-number">{{ project.number }}</span>
+          {% if project.status %}
           <span class="status-pill">{{ project.status }}</span>
+          {% endif %}
         </div>
-        <h2>{{ project.title }}</h2>
+        <h2>{% if project.detail_url %}<a href="{{ project.detail_url | relative_url }}">{{ project.title }}</a>{% else %}{{ project.title }}{% endif %}</h2>
         <p>{{ project.summary }}</p>
         <div class="project-tags">
           {% for theme in project.themes %}<span>{{ theme }}</span>{% endfor %}
         </div>
+        {% if project.detail_url %}
+        <a class="project-detail-link" href="{{ project.detail_url | relative_url }}" aria-label="{{ project.detail_label }}: {{ project.title }}">
+          {{ project.detail_label }} <span aria-hidden="true">&rarr;</span>
+        </a>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
@@ -41,7 +48,7 @@ description: Current and completed research projects by Jinghao Chen.
     <div class="empty-state reveal">
       <span class="empty-mark" aria-hidden="true">&nearr;</span>
       <h2>Ideas are still taking shape.</h2>
-      <p>Formal publications and working papers will appear here as the projects mature. In the meantime, I am happy to discuss the questions, methods, and early findings behind this work.</p>
+      <p>Working-paper findings now appear with their projects above. Formal publications will be added here as the work matures.</p>
       <a class="button button-primary" href="mailto:{{ site.data.profile.email }}">Ask about my work</a>
     </div>
   </div>
