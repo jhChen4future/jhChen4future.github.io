@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /cv/
+nav: cv
+title: CV
+description: Curriculum vitae of Jinghao Chen.
+---
+{% assign profile = site.data.profile %}
+
+<header class="page-hero shell reveal">
+  <p class="eyebrow">CV</p>
+  <h1>Curriculum vitae.</h1>
+  {% if profile.cv_available %}
+  <p>My CV is available as a PDF. <a class="text-link" href="{{ profile.cv_file | relative_url }}">View my CV <span aria-hidden="true">&nearr;</span></a></p>
+  {% else %}
+  <p>My CV will be available here soon.</p>
+  {% endif %}
+</header>

@@ -1,6 +1,6 @@
 - number: "01"
   title: Identity Bias in Human-AI Interaction
-  status: Ongoing project
+  status: Finished
   featured: true
   summary: >-
     How do identity cues change the way people evaluate, trust, and collaborate with
@@ -13,7 +13,7 @@
 
 - number: "02"
   title: Data-Driven Investment Strategies in Chinese Film Ticketing Platforms
-  status: Ongoing project
+  status: Finished
   featured: true
   summary: >-
     An applied research project using web data and computational methods to understand
@@ -22,3 +22,18 @@
     - Applied economics
     - Web data
     - Python
+
+- number: "03"
+  title: A Unified Architecture for Social Preferences Across Studies
+  status: Ongoing project
+  featured: true
+  summary: >-
+    This project asks whether social behavior across experimental settings is best
+    explained by one common preference parameter, domain-specific differences, or a
+    layered architecture that also captures dynamic states and focal choice processes.
+    It uses public human-subject datasets and cross-study validation to test which
+    components are genuinely transferable.
+  themes:
+    - Social preferences
+    - Behavioral modeling
+    - Cross-study validation
