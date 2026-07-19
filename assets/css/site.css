@@ -154,6 +154,7 @@ button { color: inherit; font: inherit; }
   letter-spacing: -0.055em;
   line-height: 0.98;
 }
+.hero h1 { line-height: 1.08; }
 .hero h1 em { position: relative; color: var(--accent); font-weight: 500; }
 .hero h1 em::after { content: ""; position: absolute; right: 0; bottom: 0.04em; left: 0; height: 0.1em; border-radius: 100%; background: var(--acid); z-index: -1; transform: rotate(-1.4deg); }
 .hero-lede { max-width: 660px; margin: 20px 0 0; color: var(--ink-soft); font-size: clamp(14px, 1.05vw, 16px); line-height: 1.5; }
