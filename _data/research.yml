@@ -1,29 +1,4 @@
 - number: "01"
-  title: Identity Bias in Human-AI Interaction
-  status: Finished
-  featured: true
-  summary: >-
-    How do identity cues change the way people evaluate, trust, and collaborate with
-    AI systems? This project studies behavioral differences across interactions with
-    humans and large language models.
-  themes:
-    - Human-AI interaction
-    - Identity
-    - Experimental design
-
-- number: "02"
-  title: Data-Driven Investment Strategies in Chinese Film Ticketing Platforms
-  status: Finished
-  featured: true
-  summary: >-
-    An applied research project using web data and computational methods to understand
-    demand signals and investment decisions in China's film ticketing market.
-  themes:
-    - Applied economics
-    - Web data
-    - Python
-
-- number: "03"
   title: A Unified Architecture for Social Preferences Across Studies
   status: Ongoing project
   featured: true
@@ -37,3 +12,29 @@
     - Social preferences
     - Behavioral modeling
     - Cross-study validation
+
+- number: "02"
+  title: "Strategic De-socialization: Experimental Evidence on Human Interaction with Large Language Models"
+  featured: true
+  summary: >-
+    Laboratory experiments examine when people extend fairness, trust, and reciprocity
+    to LLM counterparts. The results suggest that average differences are limited in
+    low-enforcement settings, while strategic incentives can shift behavior away from
+    reciprocal norms and toward exploitation of a predictably benevolent AI.
+  detail_url: /research/strategic-desocialization/
+  detail_label: See what I found
+  themes:
+    - Human-AI interaction
+    - Social preferences
+    - Experimental economics
+
+- number: "03"
+  title: Data-Driven Investment Strategies in Chinese Film Ticketing Platforms
+  featured: true
+  summary: >-
+    An applied research project using web data and computational methods to understand
+    demand signals and investment decisions in China's film ticketing market.
+  themes:
+    - Applied economics
+    - Web data
+    - Python
