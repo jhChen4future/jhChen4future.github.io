@@ -7,6 +7,9 @@
 - label: Post
   url: /writing/
   key: writing
+- label: CV
+  url: /cv/
+  key: cv
 - label: Public Goods
   url: /public-goods/
   key: public-goods
