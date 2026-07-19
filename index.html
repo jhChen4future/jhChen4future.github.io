@@ -9,7 +9,7 @@ description: Behavioral economics, prosocial behavior, cooperation, and the pote
 <section class="hero shell">
   <div class="hero-copy reveal">
     <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>{{ profile.role }} &middot; {{ profile.location }}</p>
-    <h1>I am interested in how people <em>decide</em> and cooperate in society, and in the potential of LLMs for social science.</h1>
+    <h1>I am interested in how people <em>decide</em> and cooperate, and in the potential of LLMs for social science.</h1>
     <p class="hero-lede">{{ profile.intro }}</p>
     <div class="hero-actions">
       <a class="button button-primary" href="{{ '/publications/' | relative_url }}">Explore my research <span aria-hidden="true">&rarr;</span></a>
@@ -25,37 +25,12 @@ description: Behavioral economics, prosocial behavior, cooperation, and the pote
     <div class="orbit orbit-two" aria-hidden="true"></div>
   </div>
 
-  <a class="scroll-cue" href="#research"><span aria-hidden="true">&darr;</span> Scroll to explore</a>
+  <a class="scroll-cue" href="#now"><span aria-hidden="true">&darr;</span> Scroll to explore</a>
 </section>
 
-<section class="section research-section" id="research">
-  <div class="shell">
-    <div class="section-top reveal">
-      <div class="section-label"><span>01</span> Current questions</div>
-      <a class="text-link" href="{{ '/publications/' | relative_url }}">Research overview <span aria-hidden="true">&rarr;</span></a>
-    </div>
-    <div class="project-list">
-      {% for project in site.data.research %}
-      <article class="project-card reveal">
-        <div class="project-number">{{ project.number }}</div>
-        <div class="project-body">
-          <div class="project-meta"><span>{{ project.status }}</span></div>
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.summary }}</p>
-          <div class="project-tags">
-            {% for theme in project.themes %}<span>{{ theme }}</span>{% endfor %}
-          </div>
-        </div>
-        <span class="project-arrow" aria-hidden="true">&nearr;</span>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section now-section">
+<section class="section now-section" id="now">
   <div class="shell split-grid">
-    <div class="section-label reveal"><span>02</span> Now</div>
+    <div class="section-label reveal"><span>01</span> Now</div>
     <div class="now-grid now-grid-single">
       <div class="now-card news-card reveal">
         <p class="card-kicker">Latest note</p>

@@ -10,28 +10,3 @@ description: Short posts on research, methods, and ideas in progress.
   <h1>Notes from research in progress.</h1>
   <p>A simple space for short posts on research, methods, and ideas in progress.</p>
 </header>
-
-<section class="section writing-index">
-  <div class="shell">
-    {% if site.posts.size > 0 %}
-    <div class="writing-grid">
-      {% for post in site.posts %}
-      <article class="writing-card reveal">
-        <p class="card-kicker">{{ post.date | date: "%Y.%m.%d" }}</p>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
-        <a class="text-link" href="{{ post.url | relative_url }}">Read post <span aria-hidden="true">&rarr;</span></a>
-      </article>
-      {% endfor %}
-    </div>
-    {% else %}
-    <div class="writing-empty reveal">
-      <div>
-        <p class="card-kicker">First post coming soon</p>
-        <h2>This space is intentionally empty&mdash;for now.</h2>
-        <p>I am keeping this page simple while I prepare short posts on behavioral economics, cooperation, social science, and research in progress.</p>
-      </div>
-    </div>
-    {% endif %}
-  </div>
-</section>
