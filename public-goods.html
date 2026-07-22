@@ -8,34 +8,24 @@ description: Skills, agent instructions, open research code, data, libraries, an
 <header class="page-hero shell reveal">
   <p class="eyebrow">Public Goods</p>
   <h1>Small tools and instructions for better research.</h1>
-  <p>Skills, agent instructions, open code, data, and other resources that make research easier to think through, share, reproduce, and build on.</p>
+  <p>
+    Skills, agent instructions, open code, data, and other resources that make research easier to think through, share, reproduce, and build on.
+    <span class="page-hero-contact">If you have suggestions, corrections, or simply want to exchange ideas, please <a href="mailto:{{ site.data.profile.email }}">get in touch</a>.</span>
+  </p>
 </header>
 
 <section class="section public-goods-index">
   <div class="shell">
     {% assign skills = site.data.public_goods.skills %}
-    <div class="public-goods-intro reveal">
-      <p class="card-kicker">{{ skills.title }}</p>
-      <h2>{{ skills.heading }}</h2>
-      <p>{{ skills.intro }}</p>
-    </div>
-
-    <div class="goods-skill-list">
-      {% for item in skills.items %}
-      <article class="goods-skill-item reveal">
-        <span class="goods-skill-number" aria-hidden="true">{{ item.number }}</span>
-        <div class="goods-skill-heading">
-          <p class="card-kicker">{{ item.label }}</p>
-          <h3>{{ item.name }}</h3>
-        </div>
-        <p class="goods-skill-copy">{{ item.description }}</p>
-      </article>
-      {% endfor %}
-    </div>
-
-    <div class="public-goods-note reveal">
-      <span aria-hidden="true">&nearr;</span>
-      <p>{{ skills.note }}</p>
+    <div class="public-goods-feature reveal">
+      <div>
+        <p class="card-kicker">Public collection</p>
+        <h2>{{ skills.title }}</h2>
+      </div>
+      <div class="public-goods-feature-copy">
+        <p>{{ skills.landing_summary }}</p>
+        <a class="button button-primary" href="{{ skills.detail_url | relative_url }}">Browse the collection <span aria-hidden="true">&rarr;</span></a>
+      </div>
     </div>
   </div>
 </section>
