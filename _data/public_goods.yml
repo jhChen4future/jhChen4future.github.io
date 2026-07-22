@@ -6,10 +6,23 @@ skills:
     necessarily useful for everyone, nor do I claim that they are the best
     implementations. They have, however, helped me work more deliberately with
     AI agents and think more clearly about research projects.
+  landing_summary: >-
+    A small, evolving collection of reusable skills and agent instructions,
+    shared with context on why I use them and where to find the source.
+  detail_url: /public-goods/skills-agents/
   items:
     - number: "01"
       name: Skill Creator
       label: Recommended
+      source_name: OpenAI Skills
+      source_note: >-
+        Maintained by OpenAI. The links point to the official public source and
+        its licensed SKILL.md rather than a re-hosted copy.
+      browse_url: https://github.com/openai/skills/tree/main/skills/.system/skill-creator
+      browse_external: true
+      download_url: https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md
+      download_label: Open SKILL.md
+      download_external: true
       description: >-
         My first recommendation for turning a recurring need into a reusable,
         customized skill. It helps clarify when a skill should activate, choose
@@ -21,6 +34,15 @@ skills:
     - number: "02"
       name: Prompt Rewriter
       label: An AGENTS.md pattern
+      source_name: Public template
+      source_note: >-
+        A focused, reusable AGENTS.md template. It intentionally excludes my
+        unrelated repository, storage, and GitHub workflow instructions.
+      browse_url: https://github.com/jhChen4future/jhChen4future.github.io/blob/main/public-resources/prompt-rewriter/AGENTS.md
+      browse_external: true
+      download_url: /public-resources/prompt-rewriter/AGENTS.md
+      download_label: Download AGENTS.md
+      download_file: true
       description: >-
         A small rule in my AGENTS.md asks the agent to rewrite each request
         internally as a clearer task before acting, while preserving the goal,
@@ -32,6 +54,15 @@ skills:
     - number: "03"
       name: Research Project Momentum
       label: Research workflow
+      source_name: Complete skill folder
+      source_note: >-
+        Includes the SKILL.md, supporting references, reusable templates,
+        evaluation cases, interface metadata, and the project-state helper.
+      browse_url: https://github.com/jhChen4future/jhChen4future.github.io/tree/main/public-resources/research-project-momentum
+      browse_external: true
+      download_url: /assets/downloads/research-project-momentum.zip
+      download_label: Download skill (.zip)
+      download_file: true
       description: >-
         A guardrail against conversational narrowing in long research projects.
         Agents can become anchored to the latest suggestion&mdash;for example,
