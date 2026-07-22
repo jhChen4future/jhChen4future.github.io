@@ -286,6 +286,20 @@ button { color: inherit; font: inherit; }
 .empty-state p { max-width: 600px; margin-block: 24px 30px; }
 .empty-mark { position: absolute; top: 20px; right: 24px; font-size: 32px; }
 .writing-index, .public-goods-index { padding-top: 0; border-top: 0; }
+.public-goods-intro { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 28px clamp(40px, 7vw, 100px); padding: clamp(34px, 6vw, 72px); border: 1px solid var(--line); background: var(--acid); }
+.public-goods-intro .card-kicker { grid-column: 1 / -1; margin: 0; }
+.public-goods-intro h2 { margin: 0; font-family: var(--serif); font-size: clamp(30px, 3.3vw, 44px); font-weight: 500; letter-spacing: -0.04em; line-height: 1.08; }
+.public-goods-intro > p:last-child { align-self: end; margin: 0; color: var(--ink-soft); font-size: clamp(15px, 1.45vw, 18px); }
+.goods-skill-list { margin-top: 22px; border-top: 1px solid var(--line); }
+.goods-skill-item { display: grid; grid-template-columns: 70px minmax(210px, 0.7fr) minmax(0, 1.3fr); gap: 28px; padding: 38px 30px; border: 1px solid var(--line); border-top: 0; background: var(--paper-soft); transition: background 180ms, transform 180ms; }
+.goods-skill-item:hover { background: var(--paper); transform: translateX(5px); }
+.goods-skill-number { color: var(--accent); font-family: var(--serif); font-size: 27px; line-height: 1; }
+.goods-skill-heading .card-kicker { margin: 0 0 12px; }
+.goods-skill-heading h3 { margin: 0; font-family: var(--serif); font-size: clamp(25px, 2.4vw, 32px); font-weight: 500; letter-spacing: -0.035em; line-height: 1.08; }
+.goods-skill-copy { max-width: 740px; margin: 0; color: var(--ink-soft); }
+.public-goods-note { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; max-width: 760px; margin: 36px 0 0 auto; padding-top: 24px; border-top: 1px solid var(--line); color: var(--ink-soft); }
+.public-goods-note span { color: var(--accent); font-size: 22px; line-height: 1; }
+.public-goods-note p { margin: 0; }
 .writing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .writing-card { min-height: 330px; padding: 36px; border: 1px solid var(--line); background: var(--paper-soft); }
 .writing-card h2 { margin: 0; font-family: var(--serif); font-size: 28px; font-weight: 500; line-height: 1.08; }
@@ -342,6 +356,8 @@ button { color: inherit; font: inherit; }
   .hero-visual { justify-self: center; width: min(78%, 320px); margin-top: 20px; }
   .split-grid { grid-template-columns: 1fr; }
   .now-grid, .research-detail-list, .writing-grid { grid-template-columns: 1fr; }
+  .public-goods-intro { grid-template-columns: 1fr; }
+  .goods-skill-item { grid-template-columns: 48px minmax(180px, 0.65fr) minmax(0, 1.35fr); gap: 20px; padding-inline: 22px; }
 }
 
 @media (max-width: 600px) {
@@ -363,6 +379,8 @@ button { color: inherit; font: inherit; }
   .research-fact { border-right: 0; border-bottom: 1px solid var(--line); }
   .research-fact:last-child { border-bottom: 0; }
   .finding-item { grid-template-columns: 44px minmax(0, 1fr); gap: 14px; }
+  .goods-skill-item { grid-template-columns: 38px minmax(0, 1fr); }
+  .goods-skill-copy { grid-column: 2; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-links { flex-wrap: wrap; }
   .footer-meta { grid-column: auto; }

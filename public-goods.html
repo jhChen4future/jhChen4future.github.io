@@ -3,21 +3,39 @@ layout: default
 permalink: /public-goods/
 nav: public-goods
 title: Public Goods
-description: Open research code, data, libraries, and other resources for the research community.
+description: Skills, agent instructions, open research code, data, libraries, and other resources shared by Jinghao Chen.
 ---
 <header class="page-hero shell reveal">
   <p class="eyebrow">Public Goods</p>
-  <h1>Small tools and materials for better research.</h1>
-  <p>Open code, data, libraries, and other resources that make research easier to share, reproduce, and build on.</p>
+  <h1>Small tools and instructions for better research.</h1>
+  <p>Skills, agent instructions, open code, data, and other resources that make research easier to think through, share, reproduce, and build on.</p>
 </header>
 
 <section class="section public-goods-index">
   <div class="shell">
-    <div class="empty-state reveal">
-      <span class="empty-mark" aria-hidden="true">&nearr;</span>
-      <p class="card-kicker">Nothing published yet</p>
-      <h2>Coming soon.</h2>
-      <p>This space is currently empty, but I hope to share public goods for research as soon as they are ready&mdash;code, data, and small libraries that make scientific work a little easier for others.</p>
+    {% assign skills = site.data.public_goods.skills %}
+    <div class="public-goods-intro reveal">
+      <p class="card-kicker">{{ skills.title }}</p>
+      <h2>{{ skills.heading }}</h2>
+      <p>{{ skills.intro }}</p>
+    </div>
+
+    <div class="goods-skill-list">
+      {% for item in skills.items %}
+      <article class="goods-skill-item reveal">
+        <span class="goods-skill-number" aria-hidden="true">{{ item.number }}</span>
+        <div class="goods-skill-heading">
+          <p class="card-kicker">{{ item.label }}</p>
+          <h3>{{ item.name }}</h3>
+        </div>
+        <p class="goods-skill-copy">{{ item.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="public-goods-note reveal">
+      <span aria-hidden="true">&nearr;</span>
+      <p>{{ skills.note }}</p>
     </div>
   </div>
 </section>
