@@ -1,0 +1,49 @@
+skills:
+  title: Skills & AGENTS.md
+  heading: Small pieces of agent infrastructure I keep returning to.
+  intro: >-
+    These are skills and instructions I like to use or build. They are not
+    necessarily useful for everyone, nor do I claim that they are the best
+    implementations. They have, however, helped me work more deliberately with
+    AI agents and think more clearly about research projects.
+  items:
+    - number: "01"
+      name: Skill Creator
+      label: Recommended
+      description: >-
+        My first recommendation for turning a recurring need into a reusable,
+        customized skill. It helps clarify when a skill should activate, choose
+        the right degree of freedom, keep instructions concise, add scripts or
+        references only when they earn their place, and validate the finished
+        workflow. For me, it is the best starting point for tailoring an agent
+        to the way I actually work.
+
+    - number: "02"
+      name: Prompt Rewriter
+      label: An AGENTS.md pattern
+      description: >-
+        A small rule in my AGENTS.md asks the agent to rewrite each request
+        internally as a clearer task before acting, while preserving the goal,
+        facts, constraints, and intended deliverable. It may not match the
+        precision of carefully engineered prompts, but it lowers the cost of
+        everyday prompting, makes intent easier to express, and gives the agent
+        a cleaner brief to work from.
+
+    - number: "03"
+      name: Research Project Momentum
+      label: Research workflow
+      description: >-
+        A guardrail against conversational narrowing in long research projects.
+        Agents can become anchored to the latest suggestion&mdash;for example,
+        over-focusing on one journal after it is mentioned&mdash;or keep extending an
+        inherited frame during brainstorming. This skill treats prior work as
+        project state rather than authority: it reconstructs the state,
+        diagnoses the highest-leverage bottleneck, considers genuinely
+        independent routes, tracks claims and evidence, tests whether meaningful
+        information was gained, and leaves a clear handoff. Its aim is to keep
+        later turns exploratory, critical, and consequential rather than merely
+        narrower or more polished.
+
+  note: >-
+    More conventional public goods&mdash;open code, data, and small research
+    libraries&mdash;will appear here as they become ready to share.
