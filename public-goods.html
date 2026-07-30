@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /public-goods/
+nav: public-goods
+title: Public Goods
+description: Skills, agent instructions, open research code, data, libraries, and other resources shared by Jinghao Chen.
+---
+<header class="page-hero shell reveal">
+  <p class="eyebrow">Public Goods</p>
+  <h1>Small tools and instructions for better research.</h1>
+  <p>
+    Skills, agent instructions, open code, data, and other resources that make research easier to think through, share, reproduce, and build on.
+    <span class="page-hero-contact">If you have suggestions, corrections, or simply want to exchange ideas, please <a href="mailto:{{ site.data.profile.email }}">get in touch</a>.</span>
+  </p>
+</header>
+
+<section class="section public-goods-index">
+  <div class="shell">
+    {% assign skills = site.data.public_goods.skills %}
+    <div class="public-goods-feature reveal">
+      <div>
+        <p class="card-kicker">Public collection</p>
+        <h2>{{ skills.title }}</h2>
+      </div>
+      <div class="public-goods-feature-copy">
+        <p>{{ skills.landing_summary }}</p>
+        <a class="button button-primary" href="{{ skills.detail_url | relative_url }}">Browse the collection <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>

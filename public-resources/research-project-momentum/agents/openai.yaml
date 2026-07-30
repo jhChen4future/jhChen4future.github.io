@@ -1,0 +1,7 @@
+interface:
+  display_name: "Research Project Momentum"
+  short_description: "Keep long research projects moving with bottleneck-driven state updates."
+  default_prompt: "Use $research-project-momentum to continue this research project by auditing the current state, finding the bottleneck, and choosing the next high-value stage."
+
+policy:
+  allow_implicit_invocation: true

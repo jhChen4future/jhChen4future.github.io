@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /public-goods/skills-agents/
+nav: public-goods
+title: Skills & AGENTS.md
+description: A public collection of skills and agent instructions used by Jinghao Chen.
+---
+{% assign skills = site.data.public_goods.skills %}
+<header class="page-hero shell reveal">
+  <p class="eyebrow">Public Goods &middot; Skills & AGENTS.md</p>
+  <h1>Skills and instructions I keep returning to.</h1>
+  <p>{{ skills.intro }}</p>
+</header>
+
+<section class="section skills-resource-index">
+  <div class="shell">
+    <div class="goods-skill-list">
+      {% for item in skills.items %}
+      <article class="goods-skill-item reveal">
+        <span class="goods-skill-number" aria-hidden="true">{{ item.number }}</span>
+        <div class="goods-skill-heading">
+          <p class="card-kicker">{{ item.label }}</p>
+          <h2>{{ item.name }}</h2>
+        </div>
+        <div class="goods-skill-body">
+          <p class="goods-skill-copy">{{ item.description }}</p>
+          <div class="resource-actions" aria-label="Resources for {{ item.name }}">
+            <a class="resource-action" href="{{ item.browse_url }}"{% if item.browse_external %} target="_blank" rel="noreferrer"{% endif %}>Browse source <span aria-hidden="true">&nearr;</span></a>
+            <a class="resource-action" href="{{ item.download_url }}"{% if item.download_file %} download{% endif %}{% if item.download_external %} target="_blank" rel="noreferrer"{% endif %}>{{ item.download_label }} <span aria-hidden="true">&darr;</span></a>
+          </div>
+          <p class="resource-source"><strong>{{ item.source_name }}.</strong> {{ item.source_note }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="public-goods-note reveal">
+      <span aria-hidden="true">&nearr;</span>
+      <p>{{ skills.note }}</p>
+    </div>
+
+    <a class="text-link resource-back reveal" href="{{ '/public-goods/' | relative_url }}"><span aria-hidden="true">&larr;</span> Back to Public Goods</a>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="prose-page shell narrow-shell">
+  <header class="page-heading reveal">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="page-intro">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="prose reveal">
+    {{ content }}
+  </div>
+</article>

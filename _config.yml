@@ -1,0 +1,36 @@
+title: Jinghao Chen
+description: Personal academic website of Jinghao Chen, an incoming M.S. AEM student interested in behavioral economics, cooperation, and human-AI interaction.
+url: "https://jhchen4future.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+future: false
+
+author:
+  name: Jinghao Chen
+  email: maximumc0729@gmail.com
+
+google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
+
+exclude:
+  - legacy-theme
+  - backup
+  - blogs
+  - images
+  - file
+  - mypaper
+  - awards.md
+  - hobbies.md
+  - startups.md
+  - photo.png
+  - book.jpg
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs
+  - node_modules
+  - vendor

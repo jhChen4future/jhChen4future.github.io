@@ -1,0 +1,69 @@
+{
+  "skill_name": "research-project-momentum",
+  "queries": [
+    {
+      "query": "Continue from our previous literature review and find whether there is a real next breakthrough rather than more citations.",
+      "should_trigger": true
+    },
+    {
+      "query": "We already tried the baseline model and two robustness checks. What is the highest-value next step?",
+      "should_trigger": true
+    },
+    {
+      "query": "The mechanism section assumes strategic exploitation. Audit that assumption before rewriting.",
+      "should_trigger": true
+    },
+    {
+      "query": "Our research code changed results after adding a lagged variable. Continue debugging the project.",
+      "should_trigger": true
+    },
+    {
+      "query": "/bottleneck",
+      "should_trigger": true
+    },
+    {
+      "query": "/handoff this research project into a compact state for a new thread.",
+      "should_trigger": true
+    },
+    {
+      "query": "We have a draft paper, uncertain identification, and scattered findings. Reframe the project.",
+      "should_trigger": true
+    },
+    {
+      "query": "Make further progress on the experiment design. We already discussed treatments, beliefs, and mechanisms.",
+      "should_trigger": true
+    },
+    {
+      "query": "What is the capital of France?",
+      "should_trigger": false
+    },
+    {
+      "query": "Please fix the grammar in this one sentence: The result are important.",
+      "should_trigger": false
+    },
+    {
+      "query": "Calculate 18 percent of 245.",
+      "should_trigger": false
+    },
+    {
+      "query": "Find me three papers about cooperation with AI.",
+      "should_trigger": false
+    },
+    {
+      "query": "Summarize this abstract in two bullet points.",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a Python function that computes an average.",
+      "should_trigger": false
+    },
+    {
+      "query": "Format these references in APA style.",
+      "should_trigger": false
+    },
+    {
+      "query": "Can you explain what pseudo-R2 means in ordered logit?",
+      "should_trigger": false
+    }
+  ]
+}

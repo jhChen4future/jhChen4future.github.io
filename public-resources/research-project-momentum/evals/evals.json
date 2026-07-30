@@ -1,0 +1,70 @@
+{
+  "skill_name": "research-project-momentum",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We already did a long review of social preferences, risk preferences, and time preferences. Continue and see whether there are further breakthroughs. Do not just repeat the previous literature.",
+      "expected_output": "Treats this as a new research stage, reconstructs prior state, identifies a bottleneck, opens independent branches, defines meaningful novelty, and reports a state delta rather than appending a few papers.",
+      "files": [],
+      "assertions": [
+        "Identifies or infers the current project bottleneck",
+        "Tests at least one inherited framework or assumption",
+        "Uses at least two genuinely distinct research branches",
+        "Defines what would count as substantive progress",
+        "Distinguishes new findings from repeated findings",
+        "Ends with an updated project state or next-stage decision"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The baseline ordered logit result is weak and pseudo-R2 is small. We previously tried robust SE and several controls. Keep working on the project and make real progress.",
+      "expected_output": "Does not mechanically add models. Clarifies estimand and research claim, diagnoses identification/measurement/model bottlenecks, proposes discriminating tests or simulations, and leaves a robustness or decision artifact.",
+      "files": [],
+      "assertions": [
+        "Does not equate small pseudo-R2 with model failure without diagnosis",
+        "Separates identification, measurement, fit, and inference issues",
+        "Proposes tests that discriminate between plausible causes",
+        "Explains how results would change a research decision",
+        "Produces a reusable analysis plan or artifact"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Our experiment suggests people cooperate less with AI. We have already written the mechanism as strategic exploitation because people believe AI will not retaliate. Please deepen the mechanism section.",
+      "expected_output": "Audits the inherited mechanism instead of polishing it, separates beliefs/preferences/strategy, generates rival mechanisms and decisive tests, and narrows the claim if the current evidence is only suggestive.",
+      "files": [],
+      "assertions": [
+        "Treats the existing mechanism as a hypothesis rather than established fact",
+        "Separates preferences, beliefs, strategic incentives, and observed behavior",
+        "Generates rival explanations",
+        "Proposes design or analysis changes that distinguish mechanisms",
+        "Aligns the strength of the written claim with the evidence"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "My research code has grown to 4,000 lines. The results changed after I added a lagged opponent variable. Continue debugging and improve the whole pipeline.",
+      "expected_output": "Reconstructs the executable state, reproduces the discrepancy, isolates likely merge/index/lag bugs with targeted tests, and avoids an unnecessary wholesale rewrite.",
+      "files": [],
+      "assertions": [
+        "Prioritizes reproducibility and isolation of the changed result",
+        "Considers indexing, grouping, merge keys, ordering, and lag construction",
+        "Proposes targeted tests or synthetic-data recovery",
+        "Avoids recommending a full rewrite without diagnosis",
+        "Leaves a validated failure boundary or test artifact"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Can you polish the discussion section of my paper? The causal identification is not fully settled, but I want the contribution to sound stronger.",
+      "expected_output": "Does not trigger a full project expansion unnecessarily, but recognizes the embedded validity problem, aligns claims with evidence, and suggests wording that is persuasive without overstating causality.",
+      "files": [],
+      "assertions": [
+        "Recognizes that claim strength depends on identification",
+        "Does not manufacture a stronger causal claim",
+        "Keeps the response proportional to the writing request",
+        "Produces a clear claim-evidence alignment"
+      ]
+    }
+  ]
+}
