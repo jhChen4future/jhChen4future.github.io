@@ -32,24 +32,26 @@ skills:
         to the way I actually work.
 
     - number: "02"
-      name: Prompt Rewriter
-      label: An AGENTS.md pattern
-      source_name: Public template
+      name: AGENTS.md
+      label: Agent instructions
+      source_name: Public edition
       source_note: >-
-        A focused, reusable AGENTS.md template. It intentionally excludes my
-        unrelated repository, storage, and GitHub workflow instructions.
-      browse_url: https://github.com/jhChen4future/jhChen4future.github.io/blob/main/public-resources/prompt-rewriter/AGENTS.md
+        A shareable edition based on the instructions I currently use. It keeps
+        the reusable working conventions while omitting repository-specific
+        paths and private storage details.
+      browse_url: https://github.com/jhChen4future/jhChen4future.github.io/blob/main/public-resources/agents-md/AGENTS.md
       browse_external: true
-      download_url: /public-resources/prompt-rewriter/AGENTS.md
+      download_url: /public-resources/agents-md/AGENTS.md
       download_label: Download AGENTS.md
       download_file: true
       description: >-
-        A small rule in my AGENTS.md asks the agent to rewrite each request
-        internally as a clearer task before acting, while preserving the goal,
-        facts, constraints, and intended deliverable. It may not match the
-        precision of carefully engineered prompts, but it lowers the cost of
-        everyday prompting, makes intent easier to express, and gives the agent
-        a cleaner brief to work from.
+        A compact set of durable instructions for how I want an agent to
+        interpret requests and work across projects. Prompt Rewriter is one
+        section: it turns each request into a clearer internal brief while
+        preserving its intent. The file also covers mathematical notation,
+        GitHub continuity, scoped autonomy, repository setup, and the handling
+        of research outputs. Prompt rewriting makes everyday prompting easier,
+        but it is one part of a broader working agreement with the agent.
 
     - number: "03"
       name: Research Project Momentum
