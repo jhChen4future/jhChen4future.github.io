@@ -14,6 +14,22 @@
     - Cross-study validation
 
 - number: "02"
+  title: GenAI, ESG Disclosure, and Investor Decisions
+  featured: true
+  summary: >-
+    An incentivized laboratory experiment studies how managers adapt ESG reports
+    when investors may use GenAI, and how AI assistance shapes valuation,
+    comprehension, and confidence. The exploratory evidence points to a possible
+    two-sided distortion in the information chain rather than a settled population
+    effect.
+  detail_url: /research/genai-esg-disclosure/
+  detail_label: See what I found
+  themes:
+    - Behavioral accounting
+    - Human-AI interaction
+    - ESG disclosure
+
+- number: "03"
   title: "Strategic De-socialization: Experimental Evidence on Human Interaction with Large Language Models"
   featured: true
   summary: >-
@@ -28,7 +44,7 @@
     - Social preferences
     - Experimental economics
 
-- number: "03"
+- number: "04"
   title: Data-Driven Investment Strategies in Chinese Film Ticketing Platforms
   featured: true
   summary: >-
