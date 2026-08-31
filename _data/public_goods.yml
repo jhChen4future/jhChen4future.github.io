@@ -1,13 +1,18 @@
 skills:
-  title: Skills & AGENTS.md
+  title: Skills & Agent Tools
   heading: Small pieces of agent infrastructure I keep returning to.
   intro: >-
-    These are skills and instructions I like to use or build. They are not
+    These are skills and tools I like to use or build. They are not
     necessarily useful for everyone, nor do I claim that they are the best
     implementations. They have, however, helped me work more deliberately with
     AI agents and think more clearly about research projects.
+  pace_note: >-
+    One small caveat: AI and the architecture around it move at a mildly
+    ridiculous speed, so this corner is almost guaranteed to trail frontier
+    applications by a step or two. Think of it as a living shelf, not a live
+    feed.
   landing_summary: >-
-    A small, evolving collection of reusable skills and agent instructions,
+    A small, evolving collection of reusable skills and agent tools,
     shared with context on why I use them and where to find the source.
   detail_url: /public-goods/skills-agents/
   items:
@@ -32,28 +37,6 @@ skills:
         to the way I actually work.
 
     - number: "02"
-      name: AGENTS.md
-      label: Agent instructions
-      source_name: Public edition
-      source_note: >-
-        A shareable edition based on the instructions I currently use. It keeps
-        the reusable working conventions while omitting repository-specific
-        paths and private storage details.
-      browse_url: https://github.com/jhChen4future/jhChen4future.github.io/blob/main/public-resources/agents-md/AGENTS.md
-      browse_external: true
-      download_url: /public-resources/agents-md/AGENTS.md
-      download_label: Download AGENTS.md
-      download_file: true
-      description: >-
-        A compact set of durable instructions for how I want an agent to
-        interpret requests and work across projects. Prompt Rewriter is one
-        section: it turns each request into a clearer internal brief while
-        preserving its intent. The file also covers mathematical notation,
-        GitHub continuity, scoped autonomy, repository setup, and the handling
-        of research outputs. Prompt rewriting makes everyday prompting easier,
-        but it is one part of a broader working agreement with the agent.
-
-    - number: "03"
       name: Research Project Momentum
       label: Research workflow
       source_name: Complete skill folder
