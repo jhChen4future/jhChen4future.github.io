@@ -5,7 +5,8 @@
   url: /publications/
   key: research
 - label: CV
-  url: /cv/
+  profile_url: cv_url
+  external: true
   key: cv
 - label: Public Goods
   url: /public-goods/
