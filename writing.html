@@ -5,8 +5,13 @@ nav: writing
 title: Post
 description: Daily notes, observations, and reflections by Jinghao Chen.
 ---
-<header class="page-hero shell reveal">
-  <p class="eyebrow">Post</p>
-  <h1>Notes from days, ideas, and moments in between.</h1>
-  <p>A loose collection of daily observations, small discoveries, and thoughts I want to remember.</p>
-</header>
+<section class="prose-page shell">
+  <h1>Posts</h1>
+  {% if site.posts.size > 0 %}
+  <ul class="post-list" role="list">
+    {% for post in site.posts %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
