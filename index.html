@@ -6,46 +6,26 @@ description: Behavioral economics, prosocial behavior, cooperation, and the pote
 ---
 {% assign profile = site.data.profile %}
 
-<section class="hero shell">
-  <div class="hero-copy reveal">
-    <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>{{ profile.role }} &middot; {{ profile.affiliation }} &middot; {{ profile.location }}</p>
-    <h1>I am interested in how people <em>decide</em> and <em>cooperate</em>, and in the potential of LLMs for social science.</h1>
-    <p class="hero-lede">{{ profile.intro }}</p>
-    <p class="hero-cv">Here is my <a class="text-link" href="{{ profile.cv_url }}" target="_blank" rel="noreferrer">CV <span aria-hidden="true">&nearr;</span></a>.</p>
-    <div class="hero-actions">
-      <a class="button button-primary" href="{{ '/publications/' | relative_url }}">Explore my research <span aria-hidden="true">&rarr;</span></a>
-      <a class="text-link" href="mailto:{{ profile.email }}">{{ profile.email }} <span aria-hidden="true">&nearr;</span></a>
-    </div>
+<div class="home-content shell">
+  <div class="home-profile">
+    <header class="home-intro">
+      <h1>{{ profile.name }}</h1>
+      <p class="home-affiliation">{{ profile.role }} &middot; {{ profile.affiliation }} &middot; {{ profile.location }}</p>
+      <p>{{ profile.intro }}</p>
+      <p>I am interested in how people <em>decide</em> and <em>cooperate</em>, and in the potential of LLMs for social science.</p>
+      <ul class="home-links" role="list" aria-label="Academic and contact links">
+        <li><a href="{{ '/publications/' | relative_url }}">Explore my research</a></li>
+        <li><a href="{{ profile.cv_url }}" target="_blank" rel="noreferrer">CV <span aria-hidden="true">&nearr;</span></a></li>
+        <li><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+      </ul>
+    </header>
+    <img class="home-portrait" src="{{ profile.portrait | relative_url }}" alt="{{ profile.name }}" width="1200" height="1500">
   </div>
 
-  <div class="hero-visual reveal" aria-label="Portrait of Jinghao Chen">
-    <div class="portrait-frame">
-      <img src="{{ profile.portrait | relative_url }}" alt="Jinghao Chen" width="1200" height="1500">
-    </div>
-    <div class="orbit orbit-one" aria-hidden="true"></div>
-    <div class="orbit orbit-two" aria-hidden="true"></div>
-  </div>
-</section>
-
-<section class="section now-section" id="now">
-  <div class="shell split-grid">
-    <div class="section-label reveal"><span>01</span> Now</div>
-    <div class="now-grid now-grid-single">
-      <div class="now-card news-card reveal">
-        <p class="card-kicker">Latest note</p>
-        {% for item in site.data.news limit: 1 %}
-        <p class="news-date">{{ item.date }}</p>
-        <p>{{ item.text }}</p>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contact-band">
-  <div class="shell contact-inner reveal">
-    <p class="eyebrow">Open to conversations & collaboration</p>
-    <h2>Have a question worth exploring together?</h2>
-    <a class="button button-light" href="mailto:{{ profile.email }}">Start a conversation <span aria-hidden="true">&nearr;</span></a>
-  </div>
-</section>
+  {% for item in site.data.news limit: 1 %}
+  <section class="home-note" id="now" aria-labelledby="latest-note">
+    <h2 id="latest-note">Latest note</h2>
+    <p><span class="note-date">{{ item.date }}</span> {{ item.text }}</p>
+  </section>
+  {% endfor %}
+</div>
