@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+  <title>Write a post | Jinghao Chen</title>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <script src="../../assets/js/post-writer.js" defer></script>
+</head>
+<body>
+  <main class="prose-page shell narrow-shell">
+    <a class="back-link" href="../">&larr; All posts</a>
+    <h1>Write a post</h1>
+    <form class="post-form" id="post-writer" method="post" autocomplete="off">
+      <div>
+        <label for="post-title">Title</label>
+        <input id="post-title" type="text" maxlength="160" required>
+      </div>
+      <div>
+        <label for="post-date">Date</label>
+        <input id="post-date" type="date" required>
+      </div>
+      <div>
+        <label for="post-content">Content</label>
+        <textarea id="post-content" rows="10" maxlength="60000" required></textarea>
+      </div>
+      <div>
+        <label for="post-token">GitHub publishing token</label>
+        <input id="post-token" type="password" pattern="github_pat_.+" autocomplete="off" spellcheck="false" aria-describedby="token-help" required>
+        <p id="token-help">Create a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noreferrer">fine-grained token</a> for <strong>jhChen4future.github.io</strong> with <strong>Contents: Read and write</strong>. The form sends it directly to GitHub and clears it on submit.</p>
+      </div>
+      <div>
+        <button class="button" type="submit" disabled>Publish post</button>
+        <p id="publish-status" role="status"></p>
+      </div>
+    </form>
+    <noscript><p>Enable JavaScript to publish a post.</p></noscript>
+  </main>
+</body>
+</html>

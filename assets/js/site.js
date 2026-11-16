@@ -33,7 +33,7 @@
       const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
       root.dataset.theme = nextTheme;
       themeButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
-      try { localStorage.setItem('theme', nextTheme); } catch (error) {}
+      try { localStorage.setItem('site-color-theme', nextTheme); } catch (error) {}
     });
   }
 
