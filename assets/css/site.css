@@ -218,9 +218,18 @@ button.button {
 .prose { margin-top: 1.5rem; overflow-wrap: anywhere; }
 .prose h2, .prose h3 { margin-top: 1.5em; }
 .prose img { margin-block: 1.5rem; }
+.contact-map {
+  display: block;
+  width: 100%;
+  max-width: 45rem;
+  height: clamp(16rem, 48vw, 22.5rem);
+  border: 1px solid var(--line);
+}
+
 .post-list { list-style: none; padding: 0; margin: 1rem 0 0; }
 .post-list a { display: inline-block; padding-block: 0.5rem; overflow-wrap: anywhere; }
 .post-text { white-space: pre-wrap; }
+.post-date { margin-top: 1.5rem; font-size: 0.875rem; }
 
 .post-form { display: grid; gap: 1.25rem; margin-top: 1.25rem; }
 .post-form label { display: block; font-weight: 600; margin-bottom: 0.25rem; }

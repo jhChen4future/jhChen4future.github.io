@@ -7,8 +7,7 @@ description: A public collection of skills and agent tools used by Jinghao Chen.
 ---
 {% assign skills = site.data.public_goods.skills %}
 <header class="page-hero shell reveal">
-  <p class="eyebrow">Public Goods &middot; Skills & Agent Tools</p>
-  <h1>Skills and tools I keep returning to.</h1>
+  <h1>{{ skills.title }}</h1>
   <p>{{ skills.intro }}<span class="page-hero-contact">{{ skills.pace_note }}</span></p>
 </header>
 
@@ -19,7 +18,6 @@ description: A public collection of skills and agent tools used by Jinghao Chen.
       <article class="goods-skill-item reveal">
         <span class="goods-skill-number" aria-hidden="true">{{ item.number }}</span>
         <div class="goods-skill-heading">
-          <p class="card-kicker">{{ item.label }}</p>
           <h2>{{ item.name }}</h2>
         </div>
         <div class="goods-skill-body">

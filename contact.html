@@ -6,10 +6,17 @@ title: Contact
 description: Contact information for Jinghao Chen.
 ---
 {% assign profile = site.data.profile %}
+{% assign map_location = profile.location_full | url_encode %}
 <section class="prose-page shell">
   <h1>Contact</h1>
   <p>Feel free to get in touch.</p>
   <p>Email: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a><br>
-    Location: {{ profile.location | split: ',' | first | strip }}
+    Location: {{ profile.location_full | escape }}
   </p>
+  <iframe class="contact-map"
+    title="Google Maps of {{ profile.location_full | escape }}"
+    src="https://maps.google.com/maps?q={{ map_location }}&amp;z=12&amp;output=embed"
+    width="720" height="360" loading="lazy" referrerpolicy="no-referrer"
+    allowfullscreen></iframe>
+  <p><a href="https://www.google.com/maps/search/?api=1&amp;query={{ map_location }}">Open in Google Maps</a></p>
 </section>
