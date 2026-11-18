@@ -8,23 +8,13 @@ description: Behavioral economics, prosocial behavior, cooperation, and the pote
 
 <div class="home-content shell">
   <div class="home-profile">
-    <header class="home-intro">
-      <h1>{{ profile.name }}</h1>
-      <p class="home-affiliation">{{ profile.role }} &middot; {{ profile.affiliation }} &middot; {{ profile.location }}</p>
+    <div class="home-intro">
       <p>{{ profile.intro }}</p>
       <ul class="home-links" role="list" aria-label="Academic and contact links">
-        <li><a href="{{ '/publications/' | relative_url }}">Explore my research</a></li>
         <li><a href="{{ profile.cv_url }}" target="_blank" rel="noreferrer">CV <span aria-hidden="true">&nearr;</span></a></li>
         <li><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
       </ul>
-    </header>
+    </div>
     <img class="home-portrait" src="{{ profile.portrait | relative_url }}" alt="{{ profile.name }}" width="1200" height="1500">
   </div>
-
-  {% for item in site.data.news limit: 1 %}
-  <section class="home-note" id="now" aria-labelledby="latest-note">
-    <h2 id="latest-note">Latest note</h2>
-    <p><span class="note-date">{{ item.date }}</span> {{ item.text }}</p>
-  </section>
-  {% endfor %}
 </div>
